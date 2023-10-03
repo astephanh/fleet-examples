@@ -1,0 +1,17 @@
+namespace: default
+
+# Custom helm options
+helm:
+  releaseName: subchart
+  chart: ""
+  repo: ""
+  version: ""
+  force: false
+  timeoutSeconds: 0
+
+  values:
+    guestbook:
+      replicas: 2
+    mariadb:
+      replication:
+        enabled: false
